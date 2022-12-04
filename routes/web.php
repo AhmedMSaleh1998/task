@@ -17,7 +17,7 @@ use PHPUnit\TextUI\XmlConfiguration\Group;
 |
 */
 
-Route::get('admin/login', [AuthController::class, 'login'])->name('login');
+Route::get('/', [AuthController::class, 'login'])->name('login');
 Route::post('admin/handleLogin', [AuthController::class, 'handleLogin'])->name('admin.handlelogin');
 
 Route::middleware('auth:admin')->group(function(){

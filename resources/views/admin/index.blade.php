@@ -3,13 +3,11 @@
 <section class="content">
     <div class="container-fluid">
       <!-- Small boxes (Stat box) -->
+      <p class="h-2">Most 10 User has tasks</p>
       <div class="row">
         @foreach ($users as $user )
         <div class="col-lg-3 col-6">
           <!-- small box -->
-
-
-
           <div class="small-box bg-info">
             <div class="inner">
               <h3> {{ $user->tasks_count }} </h3>
