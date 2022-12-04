@@ -8,9 +8,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="bg-info">
- @include('inc.errors')
+
 <div class="container mt-5 w-25 p-3">
   <h2 class="text-center text-white">Dashboard Login</h2>
+  @include('inc.errors')
   <form method="post" action="{{ route('admin.handlelogin') }}">
     @csrf
     <div class="mb-3 mt-3">

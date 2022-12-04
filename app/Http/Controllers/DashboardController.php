@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
     public function index(){
-        $users  = User::withCount('tasks')->orderBy('tasks_count','desc')->limit(10)->get();
+        $users  = User::withCount('tasks')->latest('tasks_count')->take(10)->get();
 
         return view('admin.index',compact('users'));
     }

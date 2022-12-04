@@ -1,7 +1,8 @@
 @extends('admin.layout.layout')
 @section('content')
-<div class="card-body">
-    <table id="example2" class="table table-bordered table-hover">
+<div class="card">
+    <div class="card-body">
+    <table id="" class="table table-bordered table-hover">
       <thead>
       <tr>
         <th>Name</th>
@@ -23,9 +24,11 @@
       </tbody>
     </table>
     <center>
-    <div style="width:100px">
+    <div class="mt-2">
     {{ $tasks->links()}}
     </div>
 </center>
 </div>
+</div>
+
 @endsection
